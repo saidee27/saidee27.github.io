@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>In-game Win Probability: Twenty20 CricketSaidee's Blog</title>
+
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="/">Saidee's Blog </a></div>
+        <div class="sub-title"></div>
+
+<p>
+    <div class="view"><a href="/pages/about.html">About</a></div>
+    <div class="view"><a href="/pages/win-probability.html">WIN PROBABILITY</a></div>
+  <div class="view"><a href="/archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+<div class="social">
+<h4>Follow Me</h4>
+<ul>
+    <li><a href="http://twitter.com/dsaihurrish">Twitter</a></li>
+    <li><a href="http://github.com/saidee27">GitHub</a></li>
+</ul>
+</div>
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        In-game Win Probability: Twenty20 Cricket
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2014-09-29T03:23:00-04:00">
+  Mon 29 September 2014
+</abbr> | 
+  tags: 
+    <a href="/tag/ipl.html">IPL</a>, 
+    <a href="/tag/t20.html">T20</a>, 
+    <a href="/tag/win-probability.html">Win Probability</a>, 
+ -- (<a href="/in-game-win-probability-twenty20-cricket.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>What? Why?</p>
+<p>In-game win-probability is not a very new thing; there are in-game
+win-probability calculators/graphs
+for <a href="http://live.advancednflstats.com/">NFL</a>, MLB
+(somewhere) and <a href="http://stats.inpredictable.com/nba/wpCalc.php">Basketball</a>.
+But surprisingly, there seems to be none for Cricket and I don't think
+I've seen live broadcasts displaying win probabilities or another metric
+that lets you objectively track the progress of the match (aside from
+the score, which is not quite the same). Most often, I'm left with Ravi
+Shastri's assessments of if a game is going down to the wire, which I
+find lacking in information. And even for Shastri's bot-like features,
+his assessments of who holds the upper hand in a game of cat and mouse,
+when push comes to shove, are not very unbiased.</p>
+<p>So, I took it upon myself to come up with an in-game win-probability
+metric for T20 games. Mostly because I like seeing t<a href="http://saidee27.files.wordpress.com/2014/09/b984e-sas_mia_gm6.png">hese kind of
+graphs</a>
+after the fact and think there might be a few others in this world. But
+also because win probability can be used to calculate win probability
+added which might be the most unambiguous metric for player evaluations
+and comparisons.</p>
+<p>For Whom?</p>
+<p>So, in-game win-probability is something for the bookies right? I don't
+know. Maybe, For everyone? I like knowing (rather than guessing) the
+likelihood of my team winning when they score 240 but give away 40 in
+the first two overs while picking up a wicket. I would like to know how
+much ground they lost by conceding 40 in the first two overs and then
+how much they regained by picking up a wicket. For example, let's look
+at some interesting past IPL matches, using win-probability graphs.</p>
+<p>1. KKR vs CSK - 2012 Final: Anatomy of a chase</p>
+<p><img alt="Image" src="https://saidee27.files.wordpress.com/2014/09/kkrcsk2012.png?w=660" /></p>
+<p>CSK won the toss, batted first and somewhat settled for a score of 190
+ for the loss of only three wickets. At the break, they had a
+probability of 0.7 (or a 70% chance) of winning the game. This increased
+to slightly above 80% within the first 10 balls of Kolkata's innings
+where notably Gambhir fell at the end of the first over scoring just two
+runs. KKR was 3-1 at the end of the first over. Chennai or an average
+team should have won from here 80% of the time. Thereafter, though,
+Kallis and Bisla took the score to 139 in 14.4 overs (84 balls). They
+had all but wrestled away CSK's advantage, as you can see, as by ball
+200 of the game CSK's chances of winning had gone down to nearly 20%.
+But things turned again and at the fall of Kalllis wicket (175-5 at 18.5
+overs) Chennai's chances of winning the game had spiked up to nearly
+45%. KKR finished strong though and in doing so completed a fine chase.
+The last data point on the graph here is the ball before the deciding
+ball, which was at 19.3 overs when KKR was 188/5.</p>
+<p>2.  KKR vs RR - 04/29/2014 : Tie?</p>
+<p><img alt="Image" src="https://saidee27.files.wordpress.com/2014/09/kkrrr14tie.png?w=660" /></p>
+<p>Rajasthan won the toss and made a score that was somewhere above easy
+and below challenging. The match was pretty much on an even keel and
+there was not much separation with respect to win probabilities until
+ball 202, when Gambhir followed Pandey (out on ball 198) after a
+somewhat steady partnership to leave KKR at 88/4 with 65 to get off 38
+balls. Rajasthan nearly had a 70% chance of winning it then. But a very
+good partnership brought the score to 137/4 in 18 overs and RR's chances
+reduced to something like 20%. That's when Faulkner bowled a magic over
+reducing KKR to 141/7 at 19 overs which soon became 146/8 at 19.2 overs.
+With, 3 runs required of the last ball and numbers 9 and 10 in, RR had
+something around a 75% chance of getting away with it. KKR managed to
+tie.</p>
+<p>3. CSK vs MI - 05/06/2012: Dwayne Smith FTW!</p>
+<p><img alt="Image" src="https://saidee27.files.wordpress.com/2014/09/cskmi2012.png?w=660" /></p>
+<p>Chennai did about okay again with a target of 174. Mumbai were sitting
+pretty at 134/1 at 15.4 overs, having cut CSK's chances to around 20%.
+But even after Sachin fell and DK fell (147/3 at 17 overs) CSK could not
+have been feeling very lucky (same 20% chance as before). But then, how
+I don't know, the score became 160/8 at 19.3 overs, giving CSK a 95%
+chance of  winning the game. But Dwayne Smith happened. The last point
+plotted here is the penultimate ball of the game, wherein MI still
+needed 4 to win with 2 wickets in hand. It is hard to argue with the
+assessment that CSK had an 80% chance of winning it then.</p>
+<p>4. RR vs Deccan - 04/24/2008: Hello IPL!</p>
+<p><img alt="Image" src="https://saidee27.files.wordpress.com/2014/09/rrdc08.png?w=660" /></p>
+<p>A score of 214 ought to win you 20 over games, or that's what the Deccan
+Chargers of '08 thought. It's hard to argue too, they had a win
+probability of slightly above 0.9 at the break. But this was 2008, and
+Yusuf Pathan was concentrating on his hitting. After 9 overs (174 balls
+in the game) RR had scored 110/1, with Pathan blasting 60 off 26. You
+could see this point it was virtually a coin-toss. Soon after, RR lost
+the plot a bit but regained tremendous ground between overs 14 and 16
+where they scored 57 runs. At the start of over 17 they were 186/3
+needing 29 off 18, which meant they had a probability of 0.7 (1 - 0.3)
+at ball 222. This equation became 14 off 4 with only 3 wickets in hand,
+which meant they had something like a 1-in-10 chance of doing it. They
+did though finishing with four, six and six in the next three balls from
+their captain Shane Warne.</p>
+<p>There are 416 other games which you can find and browse through on:
+<a href="https://saidee.shinyapps.io/winprobpast/">https://saidee.shinyapps.io/winprobpast/</a>. I think you might have fun.
+If you do find something peculiar, do let me know. One thing to note is
+that I do not have all matches on file (420 / 458) and I excluded
+matches which involved Drs. Duckworth and Lewis.</p>
+<p>Win Probability Calculator and How it Works?</p>
+<p>Okay, so great there are some 400+ graphs to look at, so what? Well,
+there is also this - <a href="https://saidee.shinyapps.io/winprot20/">https://saidee.shinyapps.io/winprot20/</a> .  It is
+an in-game win-probability calculator for the second innings of Twenty20
+games. Check it  out!  I was waiting just for the end of Champions'
+Trophy to burst out this useless tool. Just kidding, I had no idea of
+when the Champions Trohpy (is it the Champions League or Trophy?)
+started or ends.</p>
+<p>I use two separate locally weighted logistic regression models for the
+first and second innings of a match to get win probabilities at any
+point in-game. The model for the first innings assumes that at any given
+time win probability is a function of total runs  scored by batting
+team, total wickets and total balls bowled. The model for the second
+innings assumes a similar relationship between win probability and balls
+remaining, wickets lost by team batting second, runs remaining in
+target. As you'd have figured by now I offset the win probability
+calculations in the second innings by what it was in the final ball of
+the first innings. I built these models using the 420 IPL games
+previously mentioned in this post (training data). An important point to
+make here is that these win probabilities are team-neutral /
+player-neutral and ground (or conditions) - neutral. Or in other words
+I'm not accounting for these factors in my model. So, the probabilities
+reported by the model are the chances that the average team playing in
+the average conditions will win given the current situation.</p>
+<p>So, Check it out. Let me know what you think!</p>
+    </div><!-- /.entry-content -->
+  </article>
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; Saidee's Blog &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

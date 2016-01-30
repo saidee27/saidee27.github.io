@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Where does Dale Steyn rank? - Part II: Among the GreatsSaidee's Blog</title>
+
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="/">Saidee's Blog </a></div>
+        <div class="sub-title"></div>
+
+<p>
+    <div class="view"><a href="/pages/about.html">About</a></div>
+    <div class="view"><a href="/pages/win-probability.html">WIN PROBABILITY</a></div>
+  <div class="view"><a href="/archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+<div class="social">
+<h4>Follow Me</h4>
+<ul>
+    <li><a href="http://twitter.com/dsaihurrish">Twitter</a></li>
+    <li><a href="http://github.com/saidee27">GitHub</a></li>
+</ul>
+</div>
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        Where does Dale Steyn rank? -  Part II: Among the Greats
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2014-08-15T02:35:00-04:00">
+  Fri 15 August 2014
+</abbr> | 
+  tags: 
+    <a href="/tag/dale-steyn.html">Dale Steyn</a>, 
+    <a href="/tag/test-cricket.html">Test Cricket</a>, 
+ -- (<a href="/where-does-dale-steyn-rank-part-ii-among-the-greats.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>Dale Steyn is <a href="http://saidee27.wordpress.com/2014/03/04/2/">pretty darn
+good</a>. No doubt. But is his
+place among the likes of McGrath and Marshall. Does he belong / does he
+deserve a mention? I figure most of us would think he would belong. He
+is in quite <a href="http://stats.espncricinfo.com/ci/engine/stats/index.html?bowling_pacespin=1;class=1;filter=advanced;orderby=bowling_strike_rate;qualmin1=300;qualval1=wickets;template=results;type=bowling">rarefied
+company</a>
+as one of only twenty-one pace bowlers to pick up 300 wickets in Test
+Cricket. Furthermore, at a cost of 22.56 runs per wicket his wickets
+have come cheaper than that of fourteen others on this list and at 41.7
+balls per wicket have come fastest. That should pretty much settle it.
+But for naysayers (same people who deny climate change?) who think Dale
+Steyn is lucky to play in conditions good for fast bowling and for those
+who lose sleep at night over whom to include in their fantasy Greatest
+Ever World XI’s pace attack I did some statistical analysis to figure
+out how special Steyn is and how the other legends of pace bowling
+compare with each other. Among other things, it also helped me quantify
+how bad Ajit Agarkar was, how bad Ishant Sharma is and find out who were
+some of the other really bad pace bowlers to have played a decent amount
+of Test cricket.</p>
+<p>I retrieved, from Cricinfo Statsguru, match-level data for all pace
+bowlers who bowled in Test Matches from 1 Jan 1971 till 31 Jul 2014.
+While Cricinfo does have data for matches played before 1971, I stopped
+at 1971 mainly for the reason that most pace bowlers with 100 or more
+wickets - 75%, and 41 out of 46 bowlers with more than 200 wickets, made
+their debut after 1971. Also, three people with more than 300 wickets
+(whom I obviously wanted to include in the exercise) – Imran Khan (Pak),
+DK Lillee (Aus) and RGD Willis (Eng), made their debut in 1971. Since
+the exercise was to compare performance of frontline bowlers I excluded
+anyone who did not tally 10 Overs (6 ball Overs) per match.</p>
+<p>Using this data I fit a linear model to predict the number of Runs
+conceded by a bowler using as predictors the number of balls bowled, the
+opposition, the ground in which the match was played, the year in which
+the match was played and home / away status. I let the effect of
+home/away status to vary by Year in which the match was played and the
+opposition as there have been some changes to the rules of cricket over
+the years with regards to officiating and since the difference between
+performances at home and away is varies (very high for some teams and
+very low for other) by team. I also let the effect of opposition to vary
+by Year to account for the fact that different teams have gone through
+dominant, mediocre and weak phases between ’71 and ’14. The resulting
+model had an R^2^ of 0.73 i.e., did pretty good in predicting the number
+Runs a bowler conceded. To predict the number of wickets a bowler would
+take in a match I fit a <a href="http://en.wikipedia.org/wiki/Ordered_logit">proportional
+odds</a> model using number of
+balls bowled, opposition team, ground and home / away status as
+predictors. The predicted values from these models gave me the expected
+number of runs a bowler would concede and the expected number of wickets
+a bowler would pick up in each match if he did as well as the average
+bowler. So, to quantify how good each bowler did, I used the ratio of
+Observed bowling average to Expected bowling average (Total  Expected
+Runs / Total Expected Wickets). Bowlers with an O/E of 1 are just about
+average while those with an O/E of less than 1 and greater than 1 are
+better and worse respectively.</p>
+<p>Let's try and visualize this. Below is a plot of the O/E Runs vs. O/E
+Wickets. The green lines in the figure represent the 10^th^ and the
+90^th^ percentile of the Oserved / Expected Average metric among 162
+bowlers with at least 50 wickets in Test Cricket.</p>
+<p><img alt="Image" src="https://saidee27.files.wordpress.com/2014/08/50plusgoodbad.jpeg" /></p>
+<p>While the likes of  Mcgrath, Ambrose, Clark did significantly better
+than average with regards to wickets taken and runs conceded, the likes
+of Bond, Waqar, Steyn struck at such a high rate that the extra runs
+they leaked didn’t matter. Indeed Shane Bond had a career strike rate of
+38.7 for his 87 wickets – the highest among pace bowlers with more than
+50 Test wickets. Among the really bad bowlers who played a fair chunk of
+test cricket were: Mohammad Sami – 85 wickets at O/E Avg = 1.45, Manoj
+Prabhakar – 96 wickets at O/E Avg = 1.39, Lance Klusener – 80 wickets at
+O/E Avg of 1.39, Ajit Agarkar – 56 wickets at O/E Avg of 1.35. It is
+true that some of the really bad bowlers, like Klusener, McMillan,
+Prabhakar could bat and did all right but the others seem to be just
+disappointing stories. It is no surprise that none of their careers
+lasted 50 Test Matches. Here's the complete list
+- <a href="https://saidee27.files.wordpress.com/2014/08/pace_bowlers_50_or_more_wkts.xlsx">Pace_bowlers_50_or_more_Wkts</a></p>
+<p>But what I really wanted to see was how all the legends of pace bowling
+did on this metric. So, here’s the same figure as above but with all
+bowlers more than 248 wickets labelled. The dashed blue line represents
+the median O/E Average and the blue lines above and below represents the
+25^th^ and 75^th^ percentile respectively.</p>
+<p><img alt="legendsofpace" src="http://saidee27.files.wordpress.com/2014/08/legendsofpace.jpeg" /></p>
+<p>It seems that Bob Willis might have actually fared better than Lillee
+through the length of their careers, that Zaheer and not Kapil was (is?)
+India’s best seamer and that Gillespie’s role in the great Australian
+side is kinda underappreciated – especially since Lee was somewhat
+mediocre. By the O/E Average metric the 10 best bowlers with more than
+248 wickets in Test Crikcet were:</p>
+<table style="height:651px;" width="863">
+<tbody>
+<tr>
+<td colspan="8" width="742">
+**Greatest Pace Bowlers of All Time – Top 10**
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**Player**
+
+</td>
+<td width="80">
+Runs
+
+</td>
+<td width="80">
+Wkts
+
+</td>
+<td width="82">
+Matches
+
+</td>
+<td width="95">
+pred\_runs
+
+</td>
+<td width="97">
+pred\_wkts
+
+</td>
+<td width="80">
+O/E Avg
+
+</td>
+<td width="80">
+Rank
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**MD Marshall (WI)**
+
+</td>
+<td width="80">
+7876
+
+</td>
+<td width="80">
+376
+
+</td>
+<td width="82">
+81
+
+</td>
+<td width="95">
+7974.56
+
+</td>
+<td width="97">
+276.81
+
+</td>
+<td width="80">
+0.73
+
+</td>
+<td width="80">
+1
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**CEL Ambrose (WI)**
+
+</td>
+<td width="80">
+8501
+
+</td>
+<td width="80">
+405
+
+</td>
+<td width="82">
+98
+
+</td>
+<td width="95">
+10022.40
+
+</td>
+<td width="97">
+359.09
+
+</td>
+<td width="80">
+0.75
+
+</td>
+<td width="80">
+2
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**GD McGrath (Aus)**
+
+</td>
+<td width="80">
+12186
+
+</td>
+<td width="80">
+563
+
+</td>
+<td width="82">
+124
+
+</td>
+<td width="95">
+13904.01
+
+</td>
+<td width="97">
+483.13
+
+</td>
+<td width="80">
+0.75
+
+</td>
+<td width="80">
+3
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**J Garner (WI)**
+
+</td>
+<td width="80">
+5433
+
+</td>
+<td width="80">
+259
+
+</td>
+<td width="82">
+58
+
+</td>
+<td width="95">
+5812.29
+
+</td>
+<td width="97">
+210.96
+
+</td>
+<td width="80">
+0.76
+
+</td>
+<td width="80">
+4
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**Waqar Younis (Pak)**
+
+</td>
+<td width="80">
+8788
+
+</td>
+<td width="80">
+373
+
+</td>
+<td width="82">
+86
+
+</td>
+<td width="95">
+7812.80
+
+</td>
+<td width="97">
+256.85
+
+</td>
+<td width="80">
+0.77
+
+</td>
+<td width="80">
+5
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**DW Steyn (SA)**
+
+</td>
+<td width="80">
+8560
+
+</td>
+<td width="80">
+375
+
+</td>
+<td width="82">
+74
+
+</td>
+<td width="95">
+7951.82
+
+</td>
+<td width="97">
+270.32
+
+</td>
+<td width="80">
+0.78
+
+</td>
+<td width="80">
+6
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**Sir RJ Hadlee (NZ)**
+
+</td>
+<td width="80">
+9611
+
+</td>
+<td width="80">
+431
+
+</td>
+<td width="82">
+86
+
+</td>
+<td width="95">
+9873.21
+
+</td>
+<td width="97">
+349.67
+
+</td>
+<td width="80">
+0.79
+
+</td>
+<td width="80">
+7
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**Imran Khan (Pak)**
+
+</td>
+<td width="80">
+8258
+
+</td>
+<td width="80">
+362
+
+</td>
+<td width="82">
+81
+
+</td>
+<td width="95">
+8938.88
+
+</td>
+<td width="97">
+320.69
+
+</td>
+<td width="80">
+0.82
+
+</td>
+<td width="80">
+8
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**MA Holding (WI)**
+
+</td>
+<td width="80">
+5898
+
+</td>
+<td width="80">
+249
+
+</td>
+<td width="82">
+60
+
+</td>
+<td width="95">
+5671.99
+
+</td>
+<td width="97">
+197.50
+
+</td>
+<td width="80">
+0.82
+
+</td>
+<td width="80">
+9
+
+</td>
+</tr>
+<tr>
+<td width="148">
+**Wasim Akram (Pak)**
+
+</td>
+<td width="80">
+9779
+
+</td>
+<td width="80">
+414
+
+</td>
+<td width="82">
+103
+
+</td>
+<td width="95">
+10602.95
+
+</td>
+<td width="97">
+370.34
+
+</td>
+<td width="80">
+0.83
+
+</td>
+<td width="80">
+10
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>I also looked at how bowlers performed at home and away. The really good
+ones I expected to have done reasonably well everywhere. And that is
+exactly what I found. I plotted the O/E Average at home against O/E
+Average away for all bowlers with more than 50 test wickets at home and
+away. The green and red lines in the figure represent the 25^th^ and
+75^th^ percentile respectively. As you can see, the bowlers who were in
+the top 25% at home and away were also in the top 10% (labelled in the
+first figure) of bowlers with more than 50 wickets. In fact, other than
+Wasim Akram, the bowlers who did good at home and away were the ‘Really
+Good’ bowlers from earlier. You might want to check out some of the bad
+ones (or maybe not).</p>
+<p><img alt="homeaway" src="http://saidee27.files.wordpress.com/2014/08/homeaway.jpeg" /></p>
+<p>It seems fairly clear that discussions of GOAT (Greatest of All Time)
+should probably be restricted to Ambrose, Garner, Hadlee, Marshall,
+Mcgrath, Steyn and Younis. To see how their performances over their
+careers compared, I plotted (below) the cumulative O/E Average for the
+top 6 (among those with more than 248 wickets) bowlers based on this
+metric. It is no surprise Waqar had the most amazing first 30 games – at
+his peak through 27 games Waqar had 154 wickets at an average of 18.35
+and strike rate of 35.8. But Waqar’s career seems to have declined quite
+a bit in his later years. In comparison McGrath and Marshall seem to
+have hit another gear after their 80^th^ and 50^th^ test respectively.
+Dale Steyn has been a little up and down but through 75 tests he is
+right where Waqar, McGrath and Ambrose were but still quite far from
+Marshall. It is difficult to say if he’ll hit another gear or decline
+like Waqar and it probably will depend on how his body holds up. But it
+is certain that he should be considered one of the five (or six)
+greatest bowlers of all time. Here’s hoping that he finishes ahead
+of the guy who picked up 563 wickets landing cutters in the corridor.</p>
+<p><img alt="Rplot02" src="http://saidee27.files.wordpress.com/2014/08/rplot02.jpeg" /></p>
+    </div><!-- /.entry-content -->
+  </article>
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; Saidee's Blog &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

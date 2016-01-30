@@ -1,44 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Where does Dale Steyn rank?</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Where does Dale Steyn rank?Saidee's Blog</title>
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="/">Saidee's Blog </a></div>
+        <div class="sub-title"></div>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Saidee's Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/win-probability.html">WIN PROBABILITY</a></li>
-                    <li class="active"><a href="/category/cricket.html">Cricket</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<p>
+    <div class="view"><a href="/pages/about.html">About</a></div>
+    <div class="view"><a href="/pages/win-probability.html">WIN PROBABILITY</a></div>
+  <div class="view"><a href="/archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+<div class="social">
+<h4>Follow Me</h4>
+<ul>
+    <li><a href="http://twitter.com/dsaihurrish">Twitter</a></li>
+    <li><a href="http://github.com/saidee27">GitHub</a></li>
+</ul>
+</div>
+
+      </header>
+      <section>
 <section id="content" class="body">
   <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/2.html" rel="bookmark"
-           title="Permalink to Where does Dale Steyn rank?">Where does Dale Steyn rank?</a></h1>
-    </header>
+      <div class="article-title">
+        Where does Dale Steyn rank?
+      </div>
 
     <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-03-04T04:01:00-05:00">
-                Published: Tue 04 March 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/dsaihurrish.html">dsaihurrish</a>
-        </address>
-<p>In <a href="/category/cricket.html">Cricket</a>.</p>
-
-</footer><!-- /.post-info -->      <p><strong>Part I – Among his contemporaries</strong></p>
+<p>
+<small>
+<abbr class="published" title="2014-03-04T04:01:00-05:00">
+  Tue 04 March 2014
+</abbr> | 
+ -- (<a href="/2.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p><strong>Part I – Among his contemporaries</strong></p>
 <p>Dale Steyn has now played in 71 test matches picking up 361 wickets at
 an average of 22.89. This is indeed a great achievement. It has also
 happened in an era when most bowlers average around 30. But how awesome
@@ -225,36 +237,35 @@ page at Cricinfo. It should be interesting to see how Steyn’s career
 achievements compare with that of former greats like Marshall, Mcgrath,
 Lillee, Waqar and Wasim using the metric discussed here.</p>
     </div><!-- /.entry-content -->
-
   </article>
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+      </section>
+      <footer>
+        <p><small>&copy; Saidee's Blog &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
 
-                            <li><a href="http://twitter.com/dsaihurrish">Twitter</a></li>
-                            <li><a href="http://github.com/saidee27">GitHub</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-</body>
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
